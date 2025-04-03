@@ -47,7 +47,7 @@ tasks:
         - dnf -y update
         - dnf -y install kanku
         - rm  /etc/libvirt/qemu/networks/autostart/default.xml
-        - kanku setup --devel --user kanku --apiurl https://api.opensuse.org/public/
+        - kanku setup devel --user kanku --apiurl https://api.opensuse.org/public/
   -
     use_module: Kanku::Handler::CleanupIPTables
   -

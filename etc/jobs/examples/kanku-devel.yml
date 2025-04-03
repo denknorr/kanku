@@ -42,7 +42,7 @@ tasks:
         - zypper -n ar https://download.opensuse.org/repositories/devel:/kanku:/staging/15.4/devel:kanku:staging.repo
         - zypper -n --gpg-auto-import-keys ref -s
         - zypper -n in kanku-cli
-        - kanku setup --devel --user kanku --apiurl https://api.opensuse.org/public/ --osc_user admin --osc_pass admin
+        - kanku setup devel --user kanku --apiurl https://api.opensuse.org/public/ --osc_user admin --osc_pass admin
   -
     use_module: Kanku::Handler::CleanupIPTables
   -

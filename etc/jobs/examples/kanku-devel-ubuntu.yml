@@ -60,7 +60,7 @@ tasks:
         - apt-get install -y kanku
         - usermod -a -G sudo kanku
         - usermod -a -G libvirt kanku
-        - kanku setup --devel --user kanku
+        - kanku setup devel --user kanku
         # END
         - "chown kanku -R /home/kanku/.ssh"
   -
